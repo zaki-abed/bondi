@@ -1,0 +1,56 @@
+/* Variables */
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Component */
+.main-btn {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    padding: 0.5rem 1rem;
+}
+/* Navbar */
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .serach {
+    color: var(--green-color);
+    border-left: 1px solid var(--green-color);
+}
+
+/* Landing */
+.landing {
+    background-color: var(--dark-color);
+    height: calc(100vh - 72px);
+}
+
+/*  */
