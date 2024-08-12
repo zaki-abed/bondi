@@ -11,13 +11,46 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+p {
+    font-weight: 500;
+}
 /* Component */
 .main-btn {
     color: var(--yellow-color);
     background-color: var(--red-color);
     border-color: var(--red-color);
     padding: 0.5rem 1rem;
+    font-weight: 600;
+
 }
+
+.main-title::before {
+    content: "";
+    width: 130px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-twitter {
+    background-color: #1da1f2;
+}
+
+.bg-facebook {
+    background-color: #1877f2;
+}
+
+.bg-youtube {
+    background-color: #ff0000;
+}
+
+.bg-linkedin {
+    background-color: #0077b5;
+}
+
 /* Navbar */
 .navbar {
     background-color: var(--dark-color);
@@ -53,4 +86,186 @@ body {
     height: calc(100vh - 72px);
 }
 
-/*  */
+/* Features */
+.features .icon {
+    color: var(--green-color);
+}
+
+.features h4 {
+    color: var(--yellow-color);
+}
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+/* Portfolio */
+.portfolio {
+    background-color: var(--section-color);
+}
+
+.portfolio ul li {
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.portfolio ul li.active {
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    border-radius: 50rem;
+}
+
+.portfolio ul li:hover:not(.active) {
+    color: var(--yellow-color);
+}
+
+.portfolio .box::before {
+    content: "App";
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    transform: translateX(calc(-100% - 10px));
+    transition: 0.4s;
+}
+
+.portfolio .box:hover::before {
+    transform: translate(0)
+}
+
+/* About-Us */
+.about .desc {
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    .about .desc {
+        width: auto;
+    }
+    .about .details {
+        text-align: center;
+    }
+    .about .image {
+        margin-top: 20px;
+    }
+}
+
+/* Team */
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+
+}
+
+.team .box h3 {
+    background-color: var(--green-color);
+}
+
+/* Project */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* Blog */
+.blog .box {
+    border: 1px solid #eee;
+}
+
+.blog .main-btn {
+    width: fit-content;
+} 
+
+/* Subscribe */
+.subscribe {
+    background-color: var(--yellow-color);
+}
+
+.subscribe .container {
+    gap: 20px;
+}
+
+.subscribe input {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    width: 65%;
+}
+
+.subscribe input:focus {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    box-shadow: none;
+}
+
+.subscribe input::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+.subscribe a {
+    color: var(--yellow-color);
+    background: var(--dark-color);
+    border: 0;
+    transition: 0.3s;
+}
+
+.subscribe a:hover {
+    color: var(--yellow-color);
+    background: var(--dark-color);
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    font-weight: 600 !important;
+}
+
+.footer .title {
+    color: white;
+    font-size: 18px;
+}
+
+.footer span {
+    color: var(--green-color);
+}
+
+.footer span:last-child {
+    color: var(--yellow-color);
+}
+
+.footer .icon {
+    gap: 15px;
+}
+
+.footer .icon a {
+    padding: 10px;
+    display: flex;
+}
+
+.footer a i {
+    font-size: 18px;
+}
